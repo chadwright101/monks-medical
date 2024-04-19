@@ -39,8 +39,9 @@ const Footer = () => {
               >
                 www.monksmedical.com
               </Link>{" "}
-              <span className="hidden mx-1 desktopSmall:block">|</span>© Monk’s
-              Medical 2024
+              <span className="hidden mx-1 desktopSmall:block">|</span>©{" "}
+              {"Monk's"}
+              Medical 2024"
             </p>
           </div>
           <div className="desktopSmall:grid gap-10 place-items-end">
