@@ -12,7 +12,7 @@ const config: Config = {
         "3rem",
         {
           lineHeight: "110%",
-          letterSpacing: "6%",
+          letterSpacing: "0.18rem",
           fontWeight: "700",
         },
       ],
@@ -20,7 +20,7 @@ const config: Config = {
         "1.5rem",
         {
           lineHeight: "120%",
-          letterSpacing: "4%",
+          letterSpacing: "0.06rem",
           fontWeight: "500",
         },
       ],
@@ -28,7 +28,7 @@ const config: Config = {
         "1rem",
         {
           lineHeight: "125%",
-          letterSpacing: "2%",
+          letterSpacing: "0.02rem",
           fontWeight: "300",
         },
       ],
@@ -36,15 +36,23 @@ const config: Config = {
         "1rem",
         {
           lineHeight: "125%",
-          letterSpacing: "2%",
+          letterSpacing: "0.02rem",
           fontWeight: "500",
         },
       ],
-      logo: [
+      logoLarge: [
         "1rem",
         {
+          lineHeight: "80%",
+          letterSpacing: "0.055rem",
+          fontWeight: "500",
+        },
+      ],
+      logoSmall: [
+        "0.744rem",
+        {
           lineHeight: "90%",
-          letterSpacing: "5.5%",
+          letterSpacing: "0.04092rem",
           fontWeight: "500",
         },
       ],

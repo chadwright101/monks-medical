@@ -1,7 +1,10 @@
+import Logo from "./_components/logo";
+
 export default function Home() {
   return (
     <main>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nostrum!
+      <h1>Heading 1</h1>
+      <Logo />
     </main>
   );
 }
