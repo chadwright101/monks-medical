@@ -65,7 +65,7 @@ const config: Config = {
       tablet: "600px",
       tabletLarge: "950px",
       desktopSmall: "1100px",
-      desktop: "1450px",
+      desktop: "1440px",
     },
     colors: {
       transparent: "transparent",

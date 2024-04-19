@@ -26,7 +26,7 @@ const Logo = ({ large }: Props) => {
           "text-logoSmall w-[56px] -mb-[3px]": !large,
         })}
       >
-        Monk's Medical
+        {"Monk's Medical"}
       </h2>
     </Link>
   );

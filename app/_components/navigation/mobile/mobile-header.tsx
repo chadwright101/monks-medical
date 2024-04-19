@@ -14,9 +14,9 @@ const MobileHeader = () => {
     <header className="desktopSmall:hidden">
       <div
         className={classNames(
-          "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-white bg-cover bg-center ease-out delay-300",
+          "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-white bg-cover bg-center",
           {
-            "border-none": showMenuToggle,
+            "border-white": showMenuToggle,
             "bg-[url('/images/monks-medical-19.jpg')]": !showMenuToggle,
           }
         )}
@@ -26,21 +26,21 @@ const MobileHeader = () => {
           className="relative px-4 py-5 -m-3 z-20 desktopSmall:hidden ease-in-out duration-300"
           onClick={() => setShowMenuToggle(!showMenuToggle)}
         >
-          <div className="grid gap-1">
+          <div className="grid gap-1.5 -mb-1">
             <div
               className={classNames(
-                "w-[26px] h-[4px] rounded bg-black dark:bg-white ease-in-out duration-[400ms] transform origin-center",
+                "w-[26px] h-[3px] rounded bg-black dark:bg-white ease-in-out duration-[400ms] transform origin-center",
                 {
-                  "rotate-[225deg] translate-x-[0.5px] translate-y-[4px]":
+                  "rotate-[225deg] translate-x-[0px] translate-y-[4px]":
                     showMenuToggle,
                 }
               )}
             ></div>
             <div
               className={classNames(
-                "w-[26px] h-[4px] rounded bg-black dark:bg-white ease-in-out duration-[400ms] transform origin-center",
+                "w-[26px] h-[3px] rounded bg-black dark:bg-white ease-in-out duration-[400ms] transform origin-center",
                 {
-                  "rotate-[135deg] translate-x-[0.5px] -translate-y-[4px]":
+                  "rotate-[135deg] translate-x-[0px] -translate-y-[5px]":
                     showMenuToggle,
                 }
               )}
