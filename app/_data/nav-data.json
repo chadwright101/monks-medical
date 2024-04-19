@@ -1,0 +1,6 @@
+[
+  { "title": "Home", "link": "/" },
+  { "title": "Services", "link": "/#services" },
+  { "title": "Drip Menu", "link": "/drips" },
+  { "title": "Contact", "link": "/#contact" }
+]
