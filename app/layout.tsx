@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./_components/navigation/header";
+import Footer from "./_components/navigation/footer";
 
 export const metadata: Metadata = {
   title: "Monk's Medical - Dr Kyle Rorke",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <div className="max-w-[1100px] mx-7 min-[1156px]:mx-auto">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
