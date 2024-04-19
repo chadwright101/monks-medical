@@ -14,9 +14,10 @@ const MobileHeader = () => {
     <header className="desktopSmall:hidden">
       <div
         className={classNames(
-          "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-[url('/images/monks-medical-19.jpg')] bg-cover bg-top ease-out delay-300",
+          "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-white bg-cover bg-center ease-out delay-300",
           {
             "border-none": showMenuToggle,
+            "bg-[url('/images/monks-medical-19.jpg')]": !showMenuToggle,
           }
         )}
       >

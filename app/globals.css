@@ -86,7 +86,7 @@
 
 @layer components {
   * {
-    @apply font-larsseit text-black;
+    @apply font-larsseit text-black underline-offset-[6px];
   }
 
   h1,

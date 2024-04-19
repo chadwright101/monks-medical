@@ -18,13 +18,13 @@ const MobileMenuToggle = ({ onClick, cssClasses }: Props) => {
         {data.map(({ title, link }, index) => (
           <li
             key={index}
-            className={classNames("py-5", {
+            className={classNames("py-7", {
               "border-b-2 border-lightBrown": index !== data.length - 1,
             })}
           >
             <Link
               href={link}
-              className={classNames("text-[1.25rem] font-light", {
+              className={classNames("text-[1.25rem] font-light p-2 -m-2", {
                 "font-medium": currentRoute === link,
               })}
               onClick={onClick}

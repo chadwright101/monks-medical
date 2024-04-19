@@ -68,6 +68,7 @@ const config: Config = {
       desktop: "1450px",
     },
     colors: {
+      transparent: "transparent",
       white: "#ffffff",
       black: "#2D2C33",
       brown: "#A77655",
