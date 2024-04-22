@@ -77,10 +77,12 @@ const config: Config = {
       green: "#A6B2A9",
       link: "#0000EE",
     },
-    dropShadow: {
-      default: "0 4px 4px rgba(45, 44, 51, 0.25)",
+
+    extend: {
+      dropShadow: {
+        default: "0 4px 4px rgba(45, 44, 51, 0.25)",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

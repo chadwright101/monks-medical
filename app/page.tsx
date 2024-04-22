@@ -1,29 +1,35 @@
+import Image from "next/image";
 import HeroComponent from "./_components/home-page/hero-component";
 
+import data from "@/app/_data/general-data.json";
+
 export default function Home() {
+  const {
+    homePage: {
+      about: { paragraphs, image: aboutImage },
+    },
+  } = data;
+
   return (
     <>
       <HeroComponent />
-      <main>
-        <p>
-          nesciunt quisquam, eius, repellendus accusantium eligendi unde
-          aspernatur odio? Vitae iste vel, sapiente facere illo aliquam impedit,
-          rem unde dolor vero ea ab doloribus ipsum quo voluptatem obcaecati
-          repudiandae placeat nemo maxime. Error at quasi reiciendis illo
-          voluptate molestias nesciunt deleniti, blanditiis voluptatum neque vel
-          aut cum voluptatem ratione a. Harum, atque. Commodi sit consequatur id
-          illo quia repudiandae sint dolorem, voluptatum ipsa nulla laborum
-          debitis asperiores numquam suscipit deleniti alias sapiente possimus
-          qui ab unde reprehenderit. Obcaecati soluta placeat neque! Saepe, at?
-          Repellendus fuga, quidem consectetur voluptatibus autem excepturi esse
-          impedit numquam debitis, sequi velit dolorem porro accusamus adipisci
-          placeat tenetur earum distinctio neque ducimus doloribus hic officia
-          consequatur molestiae voluptatum. Est eius commodi provident dicta eos
-          quam cum architecto, modi non nulla tempore aspernatur sapiente beatae
-          hic quibusdam quis repellendus. Vero minus quae perspiciatis, nobis
-          enim quaerat sed sequi aliquam suscipit sapiente, aut officia?
-          Distinctio, quam?
-        </p>
+      <main className="pt-20 grid gap-10 bg-[url('/images/monks-medical-16.jpg')] -mx-7 p-7 min-[800px]:grid-cols-[1fr_250px] desktopSmall:grid-cols-[1fr_0.75fr] desktopSmall:-mx-[200px] desktopSmall:px-[200px]">
+        <h2 className="min-[800px]:hidden">Dr. Kyle Rorke</h2>
+        <div className="grid gap-4 order-2 min-[800px]:order-1 place-content-start">
+          <h2 className="hidden mb-6 min-[800px]:block">Dr. Kyle Rorke</h2>
+          {paragraphs.map((item, index) => (
+            <p key={index} className="text-center min-[800px]:text-justify">
+              {item}
+            </p>
+          ))}
+        </div>
+        <Image
+          src={aboutImage}
+          alt="Dr. Kyle Rorke"
+          width={600}
+          height={900}
+          className="aspect-[3/4] phone:max-h-[450px] min-[800px]:max-h-fit min-[500px]:object-top min-[800px]:order-2 desktopSmall:aspect-square"
+        />
       </main>
     </>
   );

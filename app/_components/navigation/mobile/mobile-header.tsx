@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import classNames from "classnames";
 
@@ -9,6 +9,18 @@ import MobileMenuToggle from "./mobile-menu-toggle";
 
 const MobileHeader = () => {
   const [showMenuToggle, setShowMenuToggle] = useState(false);
+
+  useEffect(() => {
+    if (showMenuToggle) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showMenuToggle]);
 
   return (
     <header className="desktopSmall:hidden">
@@ -51,7 +63,7 @@ const MobileHeader = () => {
       <MobileMenuToggle
         onClick={() => setShowMenuToggle(!showMenuToggle)}
         cssClasses={classNames(
-          "fixed top-16 z-50 w-full h-full bg-white/95 dark:bg-beige900/[98%] px-6 pt-12 ease-in-out duration-[250ms] tablet:px-10 desktopSmall:hidden",
+          "fixed top-16 z-50 w-full h-screen bg-white dark:bg-beige900/[98%] px-6 pt-12 ease-in-out duration-[250ms] tablet:px-10 desktopSmall:hidden",
           {
             "translate-x-0": showMenuToggle,
             "translate-x-full": !showMenuToggle,

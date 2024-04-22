@@ -6,5 +6,15 @@
     "/images/monks-medical-1.jpg",
     "/images/monks-medical-2.jpg",
     "/images/monks-medical-3.jpg"
-  ]
+  ],
+  "homePage": {
+    "about": {
+      "image": "/images/monks-medical-11.jpg",
+      "paragraphs": [
+        "At Monks Medical, I strive to create a relaxed environment for patients with a clean and unique look. Here, we take a holistic approach to medicine. Understanding patients' ideas and concerns is crucial. This approach empowers patients with knowledge rather than simply treating the immediate issue.",
+        "Lately, I've developed a passion for metabolic health. I focus on establishing a strong foundation of health before resorting to medication. This approach, known as functional medicine, combines both Eastern and Western philosophies, allowing us to treat both the disease and the person, promoting longevity. Additionally, I have a keen interest in Sports and Exercise medicine. I firmly believe that 'movement is life,' and staying active reduces the risk of illness.",
+        "I believe in visualising ourselves getting better every day. That means waking up each morning with a purpose. My purpose is to combine my passions for sports, nutrition, and medicine to equip my patients with the tools they need to enhance their health, improving their well-being in mind, body, and soul."
+      ]
+    }
+  }
 }

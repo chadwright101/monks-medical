@@ -30,7 +30,7 @@ const Footer = () => {
               alt="Monk's Medical logo"
               width={100}
               height={124.49}
-              className="desktopSmall:hidden"
+              className="desktopSmall:hidden w-[100px]"
             />
             <p className="flex flex-col gap-1 items-center desktopSmall:flex-row desktopSmall:gap-0">
               <Link
@@ -49,7 +49,7 @@ const Footer = () => {
               alt="Monk's Medical logo"
               width={67}
               height={83}
-              className="hidden desktopSmall:block"
+              className="hidden desktopSmall:block w-[67px]"
             />
             <p className="flex flex-col gap-1 items-center font-thin desktopSmall:items-end">
               Designed & developed by
@@ -59,7 +59,7 @@ const Footer = () => {
                 className="font-thin text-link desktopSmall:hover:opacity-80 ease-in-out duration-300 p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0"
               >
                 The Wright Designs
-              </Link>{" "}
+              </Link>
             </p>
           </div>
         </div>

@@ -36,10 +36,9 @@ const Slider = ({ cssClasses, desktop }: Props) => {
             <SwiperSlide key={index}>
               <Image
                 src={slide}
-                alt={`Monk's Medical - Image ${index}`}
+                alt={`Monk's Medical by Dr. Kyle Rorke - Image ${index}`}
                 width={1680}
                 height={1120}
-                className="w-full h-full object-cover"
               />
             </SwiperSlide>
           ))}

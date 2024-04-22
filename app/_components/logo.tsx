@@ -15,7 +15,7 @@ const Logo = ({ large }: Props) => {
         alt="Monk's Medical Logo"
         width={60.69}
         height={40}
-        className={classNames("", {
+        className={classNames(" drop-shadow-none", {
           "w-[60.69px] h-[40px]": large,
           "w-[44px] h-[29px]": !large,
         })}

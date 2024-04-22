@@ -106,4 +106,8 @@
     @apply text-button
   }
 
+  img {
+    @apply drop-shadow-default rounded-lg object-cover w-full h-full
+  }
+
 }
