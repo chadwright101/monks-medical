@@ -51,7 +51,7 @@ const MobileHeader = () => {
       <MobileMenuToggle
         onClick={() => setShowMenuToggle(!showMenuToggle)}
         cssClasses={classNames(
-          "fixed w-full h-full bg-white/95 dark:bg-beige900/[98%] px-6 pt-8 ease-in-out duration-[250ms] tablet:px-10 desktopSmall:hidden",
+          "fixed top-16 z-50 w-full h-full bg-white/95 dark:bg-beige900/[98%] px-6 pt-12 ease-in-out duration-[250ms] tablet:px-10 desktopSmall:hidden",
           {
             "translate-x-0": showMenuToggle,
             "translate-x-full": !showMenuToggle,
