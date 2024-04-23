@@ -1,7 +1,4 @@
 {
-  "contact": {
-    "email": "monksmedical@gmail.com"
-  },
   "slider": [
     "/monks-medical-1.jpg",
     "/monks-medical-2.jpg",
@@ -62,6 +59,14 @@
           "paragraph": "At Monks Medical, we offer a few different services that set us apart. We have a point-of-care blood machine capable of conducting CRP, influenza, and COVID swabs in real-time tests, enabling quick and accurate diagnosis. Additionally, I am certified to perform point-of-care ultrasound examinations using a Butterfly iQ handheld ultrasound machine, enhancing our diagnostic capabilities and enabling immediate assessment and management of various conditions."
         }
       ]
+    },
+    "contact": {
+      "phone": "+27 44 123 4567",
+      "email": "info@monksmedical.com",
+      "address": "Unit 5, Monk’s View Building, 4 Church St, Plettenberg Bay, 6600",
+      "facebook": "",
+      "instagram": "",
+      "mapUrl": ""
     }
   }
 }

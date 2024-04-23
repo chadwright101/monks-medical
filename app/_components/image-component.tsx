@@ -89,7 +89,9 @@ const ImageComponent = ({
         src={`https://ik.imagekit.io/thewrightdesigns/monks-medical/${folder}/tr:w-${
           desktopSize * 1.25
         },q-75/${file}`}
-        alt={`Monk's Medical by Dr Kyle Rorke - Plettenberg Bay ${altIndex}`}
+        alt={`Monk's Medical by Dr Kyle Rorke - Plettenberg Bay ${
+          altIndex ? altIndex : ""
+        }`}
         loading={priority ? "eager" : "lazy"}
         width={desktopSize}
         height={desktopSize * 1.25}

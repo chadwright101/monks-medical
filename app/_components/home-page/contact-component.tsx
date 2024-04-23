@@ -1,0 +1,153 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+import ImageComponent from "../image-component";
+import { showEmailAddress, showPhoneNumber } from "@/app/_actions/actions";
+
+import data from "@/app/_data/general-data.json";
+
+const ContactComponent = () => {
+  const {
+    homePage: {
+      contact: { phone, email, address, facebook, instagram, mapUrl },
+    },
+  } = data;
+
+  const [showPhone, setShowPhone] = useState("Show phone number");
+  const [showEmail, setShowEmail] = useState("Show email address");
+
+  const handleShowPhoneNumber = async () => {
+    const phoneNumber = await showPhoneNumber();
+    setShowPhone(phoneNumber);
+  };
+
+  const handleShowEmailAddress = async () => {
+    const emailAddress = await showEmailAddress();
+    setShowEmail(emailAddress);
+  };
+
+  return (
+    <section className="py-20">
+      <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-[1fr_225px] tablet:gap-10 min-[800px]:grid-cols-1">
+        <div className="grid gap-10 min-[800px]:grid-cols-2">
+          <ImageComponent
+            file="monks-medical-1.jpg"
+            folder="images"
+            phoneSize={400}
+            tabletSize={600}
+            desktopSmallSize={500}
+            desktopSize={550}
+            cssClasses=" aspect-video"
+          />
+          <ImageComponent
+            file="monks-medical-25.jpg"
+            folder="images"
+            phoneSize={400}
+            tabletSize={600}
+            desktopSmallSize={500}
+            desktopSize={550}
+            cssClasses=" aspect-video"
+          />
+        </div>
+        <ImageComponent
+          file="monks-medical-stamp.png"
+          folder="icons"
+          phoneSize={300}
+          tabletSize={300}
+          desktopSmallSize={300}
+          desktopSize={200}
+          pictureCssClasses="max-w-[300px] mx-auto min-[800px]:hidden"
+          cssClasses="tablet:object-contain"
+        />
+      </div>
+      <div id="contact" className=" desktopSmall:-translate-y-20"></div>
+      <div className="grid gap-20 pt-20">
+        <h2>Get In Touch</h2>
+        <div className="relative">
+          <ul className="grid gap-10">
+            <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
+              Phone:
+              {showPhone === "Show phone number" ? (
+                <span
+                  className="font-light italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
+                  onClick={handleShowPhoneNumber}
+                >
+                  {showPhone}
+                </span>
+              ) : (
+                <Link
+                  href={`tel:${phone}`}
+                  className="text-link font-light p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0"
+                >
+                  {showPhone}
+                </Link>
+              )}
+            </li>
+            <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
+              Email:
+              {showEmail === "Show email address" ? (
+                <span
+                  className="font-light italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
+                  onClick={handleShowEmailAddress}
+                >
+                  {showEmail}
+                </span>
+              ) : (
+                <Link
+                  href={`mailto:${email}`}
+                  className="text-link font-light p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0"
+                >
+                  {showEmail}
+                </Link>
+              )}
+            </li>
+            <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
+              Address: <span className="text-left font-light ">{address}</span>
+            </li>
+            <div className="flex gap-10 desktopSmall:gap-5">
+              <Link
+                href={facebook}
+                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90"
+              >
+                <Image
+                  src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/facebook-icon.svg"
+                  alt="Facebook icon"
+                  width={40}
+                  height={40}
+                  className="w-9 h-9 desktopSmall:w-7 desktopSmall:h-7"
+                />
+              </Link>
+              <Link
+                href={instagram}
+                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90"
+              >
+                <Image
+                  src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/instagram-icon.svg"
+                  alt="Instagram icon"
+                  width={40}
+                  height={40}
+                  className="w-9 h-9 desktopSmall:w-7 desktopSmall:h-7"
+                />
+              </Link>
+            </div>
+          </ul>
+          <ImageComponent
+            file="monks-medical-stamp.png"
+            folder="icons"
+            phoneSize={400}
+            tabletSize={600}
+            desktopSmallSize={500}
+            desktopSize={200}
+            cssClasses="tablet:object-contain"
+            pictureCssClasses="hidden min-[800px]:block absolute top-0 right-0 h-full desktopSmall:h-[250px] desktopSmall:w-auto desktopSmall:-top-14"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactComponent;

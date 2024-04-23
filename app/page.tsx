@@ -1,6 +1,7 @@
 import HeroComponent from "./_components/home-page/hero-component";
 import AboutComponent from "./_components/home-page/about-component";
 import ServicesComponent from "./_components/home-page/services-component";
+import ContactComponent from "./_components/home-page/contact-component";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <AboutComponent />
       <div id="services" className=" desktopSmall:-translate-y-20"></div>
       <ServicesComponent />
+      <ContactComponent />
     </>
   );
 }
