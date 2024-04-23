@@ -91,15 +91,15 @@
 
   h1,
   h2 {
-    @apply text-heading uppercase
+    @apply text-heading uppercase text-center desktopSmall:text-left
   }
 
   h3, h4, h5, h6 {
-    @apply text-subheading
+    @apply text-subheading text-center desktopSmall:text-left
   }
 
   p, ul, ol {
-    @apply text-paragraph text-justify
+    @apply text-paragraph text-center desktopSmall:text-justify
   }
 
   a {
@@ -108,6 +108,22 @@
 
   img {
     @apply drop-shadow-default rounded-lg object-cover w-full h-full
+  }
+
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 22px solid #DDC3A0;
+  }
+
+  .triangle-right-large {
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 22px solid #DDC3A0;
   }
 
 }

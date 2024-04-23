@@ -82,6 +82,15 @@ const config: Config = {
       dropShadow: {
         default: "0 4px 4px rgba(45, 44, 51, 0.25)",
       },
+      gap: {
+        15: "3.75rem",
+      },
+      margin: {
+        15: "3.75rem",
+      },
+      padding: {
+        15: "3.75rem",
+      },
     },
   },
   plugins: [],

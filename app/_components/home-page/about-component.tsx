@@ -17,9 +17,11 @@ const AboutComponent = () => {
       <div className="grid gap-10 min-[800px]:grid-cols-3">
         <h2 className="min-[800px]:hidden">Dr. Kyle Rorke</h2>
         <div className="grid gap-4 order-2 min-[800px]:order-none place-content-start min-[800px]:col-span-2">
-          <h2 className="hidden mb-6 min-[800px]:block">Dr. Kyle Rorke</h2>
+          <h2 className="hidden mb-6 min-[800px]:block text-left">
+            Dr. Kyle Rorke
+          </h2>
           {paragraphs.map((item, index) => (
-            <p key={index} className="text-center min-[800px]:text-justify">
+            <p key={index} className="min-[800px]:text-justify">
               {item}
             </p>
           ))}
