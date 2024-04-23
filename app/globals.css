@@ -89,6 +89,10 @@
     @apply font-larsseit text-black underline-offset-[6px];
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   h1,
   h2 {
     @apply text-heading uppercase text-center desktopSmall:text-left

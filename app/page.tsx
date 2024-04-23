@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <HeroComponent />
       <AboutComponent />
+      <div id="services" className=" desktopSmall:-translate-y-20"></div>
       <ServicesComponent />
     </>
   );

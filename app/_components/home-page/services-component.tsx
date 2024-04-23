@@ -12,10 +12,7 @@ const ServicesComponent = () => {
   } = data;
 
   return (
-    <section
-      id="services"
-      className="bg-black -mx-7 px-7 py-20 grid gap-15 desktopSmall:px-[200px] desktopSmall:-mx-[200px]"
-    >
+    <section className="bg-black -mx-7 px-7 py-20 grid gap-15 desktopSmall:px-[200px] desktopSmall:-mx-[200px]">
       <div className="grid gap-15">
         <h2 className="text-white">Services</h2>
         <ul className="grid gap-15 border-b border-white/25 pb-15 min-[800px]:grid-cols-2 desktopSmall:grid-cols-4">
