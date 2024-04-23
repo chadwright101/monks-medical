@@ -11,8 +11,9 @@ const Logo = ({ large }: Props) => {
   return (
     <Link href="/" className="flex items-end gap-1">
       <Image
-        src="/icons/monks-medical-logo.svg"
+        src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/monks-medical-logo.svg"
         alt="Monk's Medical Logo"
+        priority
         width={60.69}
         height={40}
         className={classNames(" drop-shadow-none", {

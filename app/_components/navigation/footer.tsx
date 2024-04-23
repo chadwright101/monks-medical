@@ -6,7 +6,7 @@ import data from "@/app/_data/nav-data.json";
 const Footer = () => {
   return (
     <footer className="border-t-2 border-khaki mt-20">
-      <div className="py-10 bg-[url('/images/monks-medical-18.jpg')] bg-cover bg-center max-w-[1100px] mx-auto relative px-8">
+      <div className="py-10 bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-450/images/monks-medical-18.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-650/images/monks-medical-18.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-1150/images/monks-medical-18.jpg')] bg-cover bg-center max-w-[1100px] mx-auto relative px-8">
         <div className="hidden desktopSmall:block bg-gradient-to-r from-white to-transparent w-8 absolute left-0 top-0 h-full"></div>
         <div className="grid gap-10 desktopSmall:grid-cols-2 desktopSmall:place-items-stretch desktopSmall:gap-5">
           <div className="hidden desktopSmall:block">

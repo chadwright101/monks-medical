@@ -13,6 +13,7 @@ interface Props {
   phoneBreakpoint?: number;
   tabletBreakpoint?: number;
   desktopSmallBreakpoint?: number;
+  altIndex?: number;
 }
 
 const ImageComponent = ({
@@ -28,6 +29,7 @@ const ImageComponent = ({
   phoneBreakpoint,
   tabletBreakpoint,
   desktopSmallBreakpoint,
+  altIndex,
 }: Props) => {
   return (
     <picture className={pictureCssClasses}>
@@ -87,7 +89,7 @@ const ImageComponent = ({
         src={`https://ik.imagekit.io/thewrightdesigns/monks-medical/${folder}/tr:w-${
           desktopSize * 1.25
         },q-75/${file}`}
-        alt="Monk's Medical by Dr Kyle Rorke - Plettenberg Bay"
+        alt={`Monk's Medical by Dr Kyle Rorke - Plettenberg Bay ${altIndex}`}
         loading={priority ? "eager" : "lazy"}
         width={desktopSize}
         height={desktopSize * 1.25}

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import classNames from "classnames";
 
 import Button from "@/app/_components/button";
@@ -15,7 +13,7 @@ const AboutComponent = () => {
   } = data;
 
   return (
-    <main className="grid gap-12 py-20 bg-[url('/images/monks-medical-16.jpg')] -mx-7 p-7 desktopSmall:-mx-[200px] desktopSmall:px-[200px]">
+    <main className="grid gap-12 py-20 bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-450/monks-medical-16.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-650/monks-medical-16.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-1150/monks-medical-16.jpg')] desktopSmall:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-1750/monks-medical-16.jpg')] -mx-7 p-7 desktopSmall:-mx-[200px] desktopSmall:px-[200px]">
       <div className="grid gap-10 min-[800px]:grid-cols-3">
         <h2 className="min-[800px]:hidden">Dr. Kyle Rorke</h2>
         <div className="grid gap-4 order-2 min-[800px]:order-none place-content-start min-[800px]:col-span-2">

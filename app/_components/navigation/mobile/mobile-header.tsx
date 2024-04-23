@@ -29,7 +29,8 @@ const MobileHeader = () => {
           "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-white bg-cover bg-center",
           {
             "border-white": showMenuToggle,
-            "bg-[url('/images/monks-medical-19.jpg')]": !showMenuToggle,
+            "bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-450/monks-medical-19.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-650/monks-medical-19.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-1150/monks-medical-19.jpg')]":
+              !showMenuToggle,
           }
         )}
       >

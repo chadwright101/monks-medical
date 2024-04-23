@@ -1,14 +1,15 @@
 "use client";
 
-import Image from "next/image";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+
+import ImageComponent from "./image-component";
 
 import data from "@/app/_data/general-data.json";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
 interface Props {
   cssClasses?: string;
@@ -29,16 +30,24 @@ const Slider = ({ cssClasses, desktop }: Props) => {
           loop={true}
           speed={1500}
           effect="fade"
-          modules={[Autoplay, EffectFade]}
+          modules={[Autoplay, EffectFade, Pagination]}
           className={cssClasses}
+          pagination={{
+            dynamicBullets: true,
+          }}
         >
           {slider.map((slide, index) => (
             <SwiperSlide key={index}>
-              <Image
-                src={slide}
-                alt={`Monk's Medical by Dr. Kyle Rorke - Plettenberg Bay ${index}`}
-                width={1680}
-                height={1120}
+              <ImageComponent
+                file={slide}
+                folder="images"
+                altIndex={index}
+                priority={index <= 1 ? true : false}
+                phoneSize={400}
+                tabletSize={600}
+                desktopSmallSize={1100}
+                desktopSize={1680}
+                cssClasses="rounded-none"
               />
             </SwiperSlide>
           ))}
@@ -59,12 +68,15 @@ const Slider = ({ cssClasses, desktop }: Props) => {
       >
         {slider.map((slide, index) => (
           <SwiperSlide key={index}>
-            <Image
-              src={slide}
-              alt={`Monk's Medical - Image ${index}`}
-              width={1100}
-              height={740}
-              className="w-full h-full object-cover"
+            <ImageComponent
+              file={slide}
+              folder="images"
+              altIndex={index}
+              priority={index <= 1 ? true : false}
+              phoneSize={400}
+              tabletSize={600}
+              desktopSmallSize={1100}
+              desktopSize={1550}
             />
           </SwiperSlide>
         ))}

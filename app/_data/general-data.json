@@ -3,9 +3,9 @@
     "email": "monksmedical@gmail.com"
   },
   "slider": [
-    "/images/monks-medical-1.jpg",
-    "/images/monks-medical-2.jpg",
-    "/images/monks-medical-3.jpg"
+    "/monks-medical-1.jpg",
+    "/monks-medical-2.jpg",
+    "/monks-medical-3.jpg"
   ],
   "homePage": {
     "about": {
