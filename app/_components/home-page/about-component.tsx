@@ -18,7 +18,7 @@ const AboutComponent = () => {
     <main className="grid gap-12 py-20 bg-[url('/images/monks-medical-16.jpg')] -mx-7 p-7 desktopSmall:-mx-[200px] desktopSmall:px-[200px]">
       <div className="grid gap-10 min-[800px]:grid-cols-3">
         <h2 className="min-[800px]:hidden">Dr. Kyle Rorke</h2>
-        <div className="grid gap-4 order-2 min-[800px]:order-1 place-content-start min-[800px]:col-span-2">
+        <div className="grid gap-4 order-2 min-[800px]:order-none place-content-start min-[800px]:col-span-2">
           <h2 className="hidden mb-6 min-[800px]:block">Dr. Kyle Rorke</h2>
           {paragraphs.map((item, index) => (
             <p key={index} className="text-center min-[800px]:text-justify">
@@ -36,7 +36,7 @@ const AboutComponent = () => {
         <ImageComponent
           file={kylesImage}
           folder="images"
-          cssClasses="aspect-[3/4] phone:max-h-[450px] min-[800px]:max-h-fit min-[500px]:object-top min-[800px]:order-2 desktopSmall:aspect-square"
+          cssClasses="aspect-[3/4] phone:max-h-[450px] min-[800px]:max-h-fit min-[500px]:object-top desktopSmall:aspect-square"
           phoneSize={350}
           tabletSize={750}
           tabletBreakpoint={800}
