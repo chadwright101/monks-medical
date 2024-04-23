@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="grid gap-10 place-items-center desktopSmall:place-items-end desktopSmall:order-3 desktopSmall:col-span-2 place-self-center">
             <Image
-              src="/icons/monks-medical-logo-2.svg"
+              src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-200/monks-medical-logo-2.svg"
               alt="Monk's Medical logo"
               width={100}
               height={124.49}
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
           <div className="desktopSmall:grid gap-10 place-items-end">
             <Image
-              src="/icons/monks-medical-logo-2.svg"
+              src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-150/monks-medical-logo-2.svg"
               alt="Monk's Medical logo"
               width={67}
               height={83}
