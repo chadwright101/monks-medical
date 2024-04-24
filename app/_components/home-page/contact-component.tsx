@@ -70,7 +70,7 @@ const ContactComponent = () => {
       <div className="grid gap-20 pt-20">
         <h2>Get In Touch</h2>
         <div className="relative">
-          <ul className="grid gap-10">
+          <ul className="grid gap-10 tablet:gap-7 desktopSmall:gap-5">
             <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
               Phone:
               {showPhone === "Show phone number" ? (
@@ -113,7 +113,7 @@ const ContactComponent = () => {
             <div className="flex gap-10 desktopSmall:gap-5">
               <Link
                 href={facebook}
-                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90"
+                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-9 ease-in-out duration-300"
                 target="_blank"
               >
                 <Image
@@ -126,7 +126,7 @@ const ContactComponent = () => {
               </Link>
               <Link
                 href={instagram}
-                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90"
+                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90 ease-in-out duration-300"
                 target="_blank"
               >
                 <Image

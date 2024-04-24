@@ -42,7 +42,7 @@ const MobileHeader = () => {
           <div className="grid gap-1.5 -mb-1">
             <div
               className={classNames(
-                "w-[26px] h-[3px] rounded bg-black dark:bg-white ease-in-out duration-[400ms] transform origin-center",
+                "w-[26px] h-[3px] rounded bg-black ease-in-out duration-[400ms] transform origin-center",
                 {
                   "rotate-[225deg] translate-x-[0px] translate-y-[4px]":
                     showMenuToggle,
@@ -51,7 +51,7 @@ const MobileHeader = () => {
             ></div>
             <div
               className={classNames(
-                "w-[26px] h-[3px] rounded bg-black dark:bg-white ease-in-out duration-[400ms] transform origin-center",
+                "w-[26px] h-[3px] rounded bg-black ease-in-out duration-[400ms] transform origin-center",
                 {
                   "rotate-[135deg] translate-x-[0px] -translate-y-[5px]":
                     showMenuToggle,
@@ -64,7 +64,7 @@ const MobileHeader = () => {
       <MobileMenuToggle
         onClick={() => setShowMenuToggle(!showMenuToggle)}
         cssClasses={classNames(
-          "fixed top-16 z-50 w-full h-screen bg-white dark:bg-beige900/[98%] px-6 pt-12 ease-in-out duration-500 tablet:px-10 desktopSmall:hidden",
+          "fixed top-16 z-50 w-full h-screen bg-white px-6 pt-12 ease-in-out duration-500 tablet:px-10 desktopSmall:hidden",
           {
             "translate-x-0": showMenuToggle,
             "translate-x-full": !showMenuToggle,
