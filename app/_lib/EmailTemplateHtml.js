@@ -9,7 +9,7 @@ export const emailTemplateHtml = ({ name, email, message, phone }) => {
     <table style="width: 100%; background-color: #A77655;">
       <tr>
         <td>
-          <h1 style="padding: 1rem;">Monk's Medical</h1>
+          <h1 style="padding: 1rem; color:#fff;">Monk's Medical</h1>
         </td>
       </tr>
     </table>
@@ -23,12 +23,8 @@ export const emailTemplateHtml = ({ name, email, message, phone }) => {
           </p>
           ${
             phone &&
-            `
-              <p style="font-size: 1rem; font-weight: 500;">
-                Phone Number:{" "}
-                <span style="font-weight: 200; font-style: italic;">
-                  ${phone}
-                </span>
+            `<p style="font-size: 1rem; font-weight: 500;">
+                Phone Number: <span style="font-weight: 200; font-style: italic;">${phone}</span>
               </p>`
           }
           <p style="font-size: 1rem; font-weight: 500;">
