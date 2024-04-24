@@ -49,7 +49,7 @@ const Footer = () => {
               alt="Monk's Medical logo"
               width={67}
               height={83}
-              className="hidden desktopSmall:block w-[67px]"
+              className="hidden desktopSmall:block w-[67px] h-auto"
             />
             <p className="flex flex-col gap-1 items-center font-thin desktopSmall:items-end">
               Designed & developed by

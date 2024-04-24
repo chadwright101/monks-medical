@@ -43,8 +43,8 @@ const Slider = ({ cssClasses, desktop }: Props) => {
                 folder="images"
                 altIndex={index}
                 priority={index <= 1 ? true : false}
-                phoneSize={400}
-                tabletSize={600}
+                phoneSize={550}
+                tabletSize={700}
                 desktopSmallSize={1100}
                 desktopSize={1680}
                 cssClasses="rounded-none"

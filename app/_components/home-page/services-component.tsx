@@ -17,7 +17,10 @@ const ServicesComponent = () => {
         <h2 className="text-white">Services</h2>
         <ul className="grid gap-15 border-b border-white/25 pb-15 min-[800px]:grid-cols-2 desktopSmall:grid-cols-4">
           {general.map(({ image, title, paragraph }, index) => (
-            <li key={index} className="flex flex-col gap-5">
+            <li
+              key={index}
+              className="grid desktopSmall:place-content-start desktopSmall:grid-rows-[140px_60px_1fr] gap-5"
+            >
               <div className="h-[140px]">
                 <Image
                   src={`https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-250,q-80${image}`}

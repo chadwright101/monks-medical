@@ -1,13 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import ImageComponent from "../image-component";
 import { showEmailAddress, showPhoneNumber } from "@/app/_actions/actions";
+import ContactForm from "./contact/contact-form";
 
 import data from "@/app/_data/general-data.json";
+
+const LazyContactMap = lazy(() => import("./contact/contact-map"));
 
 const ContactComponent = () => {
   const {
@@ -30,7 +33,7 @@ const ContactComponent = () => {
   };
 
   return (
-    <section className="py-20">
+    <section className="pt-20">
       <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-[1fr_225px] tablet:gap-10 min-[800px]:grid-cols-1">
         <div className="grid gap-10 min-[800px]:grid-cols-2">
           <ImageComponent
@@ -111,25 +114,27 @@ const ContactComponent = () => {
               <Link
                 href={facebook}
                 className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90"
+                target="_blank"
               >
                 <Image
                   src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/facebook-icon.svg"
                   alt="Facebook icon"
                   width={40}
                   height={40}
-                  className="w-9 h-9 desktopSmall:w-7 desktopSmall:h-7"
+                  className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
                 />
               </Link>
               <Link
                 href={instagram}
                 className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90"
+                target="_blank"
               >
                 <Image
                   src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/instagram-icon.svg"
                   alt="Instagram icon"
                   width={40}
                   height={40}
-                  className="w-9 h-9 desktopSmall:w-7 desktopSmall:h-7"
+                  className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
                 />
               </Link>
             </div>
@@ -145,6 +150,22 @@ const ContactComponent = () => {
             pictureCssClasses="hidden min-[800px]:block absolute top-0 right-0 h-full desktopSmall:h-[250px] desktopSmall:w-auto desktopSmall:-top-14"
           />
         </div>
+      </div>
+      <div className="flex flex-col gap-20 pt-20 min-[800px]:grid grid-cols-2 min-[800px]:gap-10 desktopSmall:gap-20">
+        <Suspense
+          fallback={
+            <div
+              className={
+                "border-2 bg-white text-black border-black text-[30px] grid place-items-center py-16 w-full h-full min-[800px]:order-2"
+              }
+            >
+              Map loading...
+            </div>
+          }
+        >
+          <LazyContactMap cssClasses="w-full h-[400px] phone:h-[450px] tablet:h-[500px] min-[800px]:h-full min-[800px]:order-2" />
+        </Suspense>
+        <ContactForm />
       </div>
     </section>
   );

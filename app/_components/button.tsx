@@ -9,6 +9,9 @@ interface Props {
   cssClasses?: string;
   additionalServices?: boolean;
   onClick?: () => void;
+  form?: boolean;
+  disabled?: boolean;
+  type?: "submit";
 }
 
 const Button = ({
@@ -18,6 +21,9 @@ const Button = ({
   cssClasses,
   additionalServices,
   onClick,
+  form,
+  disabled,
+  type,
 }: Props) => {
   if (!additionalServices && link) {
     return (
@@ -36,6 +42,26 @@ const Button = ({
       >
         {children}
       </Link>
+    );
+  } else if (form) {
+    return (
+      <button
+        type={type || "button"}
+        className={classNames(
+          `px-7 py-5 text-center rounded-lg uppercase text-button ${cssClasses}`,
+          {
+            "bg-brown text-white": backgroundColor === "brown",
+            "bg-green text-white": backgroundColor === "green",
+            "bg-khaki text-white": backgroundColor === "khaki",
+            "bg-black text-white": backgroundColor === "black",
+            "bg-lightBrown text-black": backgroundColor === "light brown",
+          }
+        )}
+        disabled={disabled}
+        onClick={onClick}
+      >
+        {children}
+      </button>
     );
   } else {
     return (
