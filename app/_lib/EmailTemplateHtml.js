@@ -21,9 +21,16 @@ export const emailTemplateHtml = ({ name, email, message, phone }) => {
           <p style="font-size: 1rem; margin-top: 1rem; font-weight: 500;">
             Name: <span style="font-weight: 200; font-style: italic;">${name}</span>
           </p>
-          <p style="font-size: 1rem; font-weight: 500;">
-            Phone Number: <span style="font-weight: 200; font-style: italic;">${phone}</span>
-          </p>
+          ${
+            phone &&
+            `
+              <p style="font-size: 1rem; font-weight: 500;">
+                Phone Number:{" "}
+                <span style="font-weight: 200; font-style: italic;">
+                  ${phone}
+                </span>
+              </p>`
+          }
           <p style="font-size: 1rem; font-weight: 500;">
             Email address: <span style="font-weight: 200; font-style: italic;">${email}</span>
           </p>

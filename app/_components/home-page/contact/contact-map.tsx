@@ -5,7 +5,7 @@ interface Props {
 }
 
 const ContactMap = ({ cssClasses }: Props) => {
-  const { isLoaded } = useLoadScript({
+  const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyBEHEWRnqpHLrFtUqs2oyORbfpvRwmdoTM",
   });
   if (!isLoaded)
@@ -14,6 +14,14 @@ const ContactMap = ({ cssClasses }: Props) => {
         className={`border rounded-xl bg-white border-black text-[30px] font-light text-black grid place-items-center py-16 w-full h-full ${cssClasses}`}
       >
         Map loading...
+      </div>
+    );
+  if (loadError)
+    return (
+      <div
+        className={`border rounded-xl bg-white border-black text-[30px] font-light text-black grid place-items-center py-16 w-full h-full ${cssClasses}`}
+      >
+        Error loading map...
       </div>
     );
   return (

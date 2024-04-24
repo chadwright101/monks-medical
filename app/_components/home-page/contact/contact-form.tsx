@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import classNames from "classnames";
 import Button from "@/app/_components/button";
@@ -13,9 +13,8 @@ interface Props {
 
 const ContactForm = ({ cssClasses }: Props) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
-  const ref = useRef(null);
 
   useEffect(() => {
     const startSubmissionTimer = () => {
@@ -50,30 +49,17 @@ const ContactForm = ({ cssClasses }: Props) => {
       {showEmailSubmitted ? (
         <>
           <div id="email-submitted"></div>
-          <div className="grid gap-10">
-            <p className="italic">
-              Your email has been sent, we will be in touch soon.
-            </p>
-            <Button
-              form
-              onClick={() => setShowEmailSubmitted(false)}
-              backgroundColor="black"
-            >
-              Go back
-            </Button>
-          </div>
+          <p className="italic">
+            Your email has been sent, we will be in touch soon.
+          </p>
         </>
       ) : (
         <section
           className={`bg-brown px-7 -mx-7 py-10 min-[800px]:m-0 min-[800px]:p-7 min-[800px]:rounded-xl ${cssClasses}`}
         >
           <form
-            ref={ref}
             action={async (formData) => {
               await sendEmail(formData);
-              if (ref.current) {
-                (ref.current as HTMLFormElement).reset();
-              }
               setShowEmailSubmitted(true);
             }}
             className="flex flex-col gap-8"
@@ -92,17 +78,16 @@ const ContactForm = ({ cssClasses }: Props) => {
             <label htmlFor="name" className="flex flex-col gap-2">
               Phone:
               <input
-                type="text"
+                type="number"
                 id="phone"
                 name="phone"
-                required
                 placeholder="Phone number"
               />
             </label>
             <label htmlFor="email" className="flex flex-col gap-2">
               Email:
               <input
-                type="text"
+                type="email"
                 id="email"
                 name="email"
                 required

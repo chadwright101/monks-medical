@@ -15,7 +15,7 @@ const LazyContactMap = lazy(() => import("./contact/contact-map"));
 const ContactComponent = () => {
   const {
     homePage: {
-      contact: { phone, email, address, facebook, instagram, mapUrl },
+      contact: { phone, email, address, facebook, instagram },
     },
   } = data;
 
@@ -163,7 +163,7 @@ const ContactComponent = () => {
             </div>
           }
         >
-          <LazyContactMap cssClasses="w-full h-[400px] phone:h-[450px] tablet:h-[500px] min-[800px]:h-full min-[800px]:order-2" />
+          <LazyContactMap cssClasses="w-full h-[400px] phone:h-[450px] tablet:h-[500px] min-[800px]:h-full min-h-[250px] min-[800px]:order-2" />
         </Suspense>
         <ContactForm />
       </div>
