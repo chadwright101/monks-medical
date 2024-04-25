@@ -42,7 +42,12 @@ const DripItems = ({ data, cssClasses }: Props) => {
               tabletSize={750}
               desktopSmallSize={550}
               desktopSize={400}
-              cssClasses="aspect-video min-[800px]:aspect-none min-[800px]:h-full"
+              cssClasses={classNames(
+                "aspect-video min-[800px]:aspect-none min-[800px]:h-full",
+                {
+                  "scale-x-[-1]": index === 1,
+                }
+              )}
             />
           </section>
           {index !== data.length - 1 && (

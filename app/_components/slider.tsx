@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 
 import ImageComponent from "./image-component";
 
@@ -30,8 +30,12 @@ const Slider = ({ cssClasses, desktop }: Props) => {
           loop={true}
           speed={1500}
           effect="fade"
-          modules={[Autoplay, EffectFade, Pagination]}
+          modules={[Autoplay, EffectFade, Pagination, Navigation]}
           className={cssClasses}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           pagination={{
             dynamicBullets: true,
           }}
@@ -51,6 +55,27 @@ const Slider = ({ cssClasses, desktop }: Props) => {
               />
             </SwiperSlide>
           ))}
+          <button className="swiper-button-prev absolute top-1/2 z-10 left-10 cursor-pointer grid place-items-center p-2.5 rounded-full bg-white/[60%] hover:bg-white/75 ease-in-out duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28"
+              viewBox="0 -960 960 960"
+              width="28"
+              className=" rotate-180 -translate-x-[1px]"
+            >
+              <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+            </svg>
+          </button>
+          <button className="swiper-button-next absolute top-1/2 z-10 right-10 cursor-pointer grid place-items-center p-2.5 rounded-full bg-white/[60%] hover:bg-white/75 ease-in-out duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28"
+              viewBox="0 -960 960 960"
+              width="28"
+            >
+              <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+            </svg>
+          </button>
         </Swiper>
       </>
     );

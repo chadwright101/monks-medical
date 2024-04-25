@@ -26,7 +26,7 @@ const AboutComponent = () => {
             </p>
           ))}
           <Button
-            link="mailto:reception@monksmedical.com"
+            link="mailto:info@monksmedical.com"
             backgroundColor="light brown"
             cssClasses="mt-6 desktopSmall:mr-auto"
           >

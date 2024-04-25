@@ -3,7 +3,7 @@ import Slider from "../slider";
 const HeroComponent = () => {
   return (
     <section>
-      <div className="-mx-7 h-[400px] desktopSmall:hidden">
+      <div className="-mx-7 h-[450px] tablet:h-[550px] desktopSmall:hidden">
         <Slider cssClasses="w-full h-full" />
       </div>
       <div className="hidden h-[600px] desktopSmall:block desktopSmall:mx-0 desktop:-mx-[200px]">

@@ -67,7 +67,7 @@ const Button = ({
     return (
       <button
         type="button"
-        className={`text-paragraph text-center px-2.5 py-2 -mx-2.5 -my-2 rounded desktopSmall:hover:text-white desktopSmall:rounded-none ease-in-out ${cssClasses}`}
+        className={`text-paragraph text-center px-2.5 pt-[10px] pb-2 -mx-2.5 -my-2 rounded desktopSmall:hover:text-white desktopSmall:rounded-none ease-in-out ${cssClasses}`}
         onClick={onClick}
       >
         {children}
