@@ -29,6 +29,7 @@ const AboutComponent = () => {
             link="mailto:info@monksmedical.com"
             backgroundColor="light brown"
             cssClasses="mt-6 desktopSmall:mr-auto"
+            ariaLabel="Book a cosultation via email"
           >
             Book a consultation
           </Button>

@@ -33,6 +33,7 @@ const AdditionalServicesComponent = () => {
               "bg-lightBrown text-black": showTitle === title,
             })}
             onClick={() => setShowTitle(title)}
+            ariaLabel={`Show ${title} services`}
           >
             {title}
             {showTitle === title && (

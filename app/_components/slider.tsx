@@ -24,7 +24,7 @@ const Slider = ({ cssClasses, desktop }: Props) => {
       <>
         <Swiper
           autoplay={{
-            delay: 3500,
+            delay: 4000,
           }}
           spaceBetween={16}
           loop={true}
@@ -46,9 +46,9 @@ const Slider = ({ cssClasses, desktop }: Props) => {
                 file={slide}
                 folder="images"
                 altIndex={index}
-                priority={index <= 1 ? true : false}
-                phoneSize={550}
-                tabletSize={700}
+                priority={index === 0 ? true : false}
+                phoneSize={650}
+                tabletSize={800}
                 desktopSmallSize={1100}
                 desktopSize={1680}
                 cssClasses="rounded-none"
@@ -83,7 +83,7 @@ const Slider = ({ cssClasses, desktop }: Props) => {
     return (
       <Swiper
         autoplay={{
-          delay: 3500,
+          delay: 4000,
         }}
         spaceBetween={16}
         loop={true}
@@ -97,7 +97,7 @@ const Slider = ({ cssClasses, desktop }: Props) => {
               file={slide}
               folder="images"
               altIndex={index}
-              priority={index <= 1 ? true : false}
+              priority={index === 0 ? true : false}
               phoneSize={400}
               tabletSize={600}
               desktopSmallSize={1100}

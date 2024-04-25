@@ -67,28 +67,16 @@ const ContactForm = ({ cssClasses }: Props) => {
             <input type="hidden" name="_honey" className="hidden" />
             <label htmlFor="name" className="flex flex-col gap-2">
               Name:
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Full name"
-              />
+              <input type="text" name="name" required placeholder="Full name" />
             </label>
             <label htmlFor="name" className="flex flex-col gap-2">
               Phone:
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                placeholder="Phone number"
-              />
+              <input type="number" name="tel" placeholder="Phone number" />
             </label>
             <label htmlFor="email" className="flex flex-col gap-2">
               Email:
               <input
                 type="email"
-                id="email"
                 name="email"
                 required
                 placeholder="Email address"
@@ -97,7 +85,6 @@ const ContactForm = ({ cssClasses }: Props) => {
             <label htmlFor="message" className="flex flex-col gap-2">
               Message:
               <textarea
-                id="message"
                 required
                 rows={5}
                 name="message"
@@ -113,6 +100,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                   !validateRecaptcha,
               })}
               disabled={!validateRecaptcha}
+              ariaLabel="Submit form"
             >
               Submit
             </Button>

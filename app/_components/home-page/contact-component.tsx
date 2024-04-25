@@ -74,12 +74,13 @@ const ContactComponent = () => {
             <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
               Phone:
               {showPhone === "Show phone number" ? (
-                <span
+                <button
                   className="font-light italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
                   onClick={handleShowPhoneNumber}
+                  aria-label="Show phone number"
                 >
                   {showPhone}
-                </span>
+                </button>
               ) : (
                 <Link
                   href={`tel:${phone}`}
@@ -92,12 +93,13 @@ const ContactComponent = () => {
             <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
               Email:
               {showEmail === "Show email address" ? (
-                <span
+                <button
                   className="font-light italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
                   onClick={handleShowEmailAddress}
+                  aria-label="Show email address"
                 >
                   {showEmail}
-                </span>
+                </button>
               ) : (
                 <Link
                   href={`mailto:${email}`}

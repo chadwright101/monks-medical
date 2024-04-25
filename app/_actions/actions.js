@@ -23,7 +23,7 @@ export async function sendEmail(formData) {
   try {
     if (honey === null) {
       const name = sanitize(formData.get("name"));
-      const phone = sanitize(formData.get("phone"));
+      const phone = sanitize(formData.get("tel"));
       const email = sanitize(formData.get("email"));
       const message = sanitize(formData.get("message"));
 
