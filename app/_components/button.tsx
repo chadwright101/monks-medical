@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useFormStatus } from "react-dom";
 
 import classNames from "classnames";
 
@@ -27,6 +30,8 @@ const Button = ({
   type,
   ariaLabel,
 }: Props) => {
+  const { pending } = useFormStatus();
+
   if (!additionalServices && link) {
     return (
       <Link
@@ -49,21 +54,12 @@ const Button = ({
     return (
       <button
         type={type || "button"}
-        className={classNames(
-          `px-7 py-5 text-center rounded-lg uppercase text-button ${cssClasses}`,
-          {
-            "bg-brown text-white": backgroundColor === "brown",
-            "bg-green text-white": backgroundColor === "green",
-            "bg-khaki text-white": backgroundColor === "khaki",
-            "bg-black text-white": backgroundColor === "black",
-            "bg-lightBrown text-black": backgroundColor === "light brown",
-          }
-        )}
+        className={`px-7 py-5 text-center rounded-lg uppercase text-button bg-black text-white ${cssClasses}`}
         aria-label={ariaLabel}
         disabled={disabled}
         onClick={onClick}
       >
-        {children}
+        {pending ? <div className="spinner"></div> : <>{children}</>}
       </button>
     );
   } else {

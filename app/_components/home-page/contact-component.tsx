@@ -75,7 +75,7 @@ const ContactComponent = () => {
               Phone:
               {showPhone === "Show phone number" ? (
                 <button
-                  className="font-light italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
+                  className="font-light text-link italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
                   onClick={handleShowPhoneNumber}
                   aria-label="Show phone number"
                 >
@@ -94,7 +94,7 @@ const ContactComponent = () => {
               Email:
               {showEmail === "Show email address" ? (
                 <button
-                  className="font-light italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
+                  className="font-light text-link italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0"
                   onClick={handleShowEmailAddress}
                   aria-label="Show email address"
                 >

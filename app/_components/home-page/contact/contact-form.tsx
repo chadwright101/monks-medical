@@ -110,7 +110,6 @@ const ContactForm = ({ cssClasses }: Props) => {
             <Button
               form
               type="submit"
-              backgroundColor="black"
               cssClasses={classNames("", {
                 "opacity-50 desktopSmall:cursor-not-allowed":
                   !validateRecaptcha,
