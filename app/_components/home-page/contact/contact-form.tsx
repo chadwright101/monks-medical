@@ -107,7 +107,20 @@ const ContactForm = ({ cssClasses }: Props) => {
                 placeholder="Type your message here..."
               ></textarea>
             </label>
-            {/* ... */}
+            <Button
+              form
+              type="submit"
+              backgroundColor="black"
+              cssClasses={classNames("", {
+                "opacity-50 desktopSmall:cursor-not-allowed":
+                  !validateRecaptcha,
+              })}
+              disabled={!validateRecaptcha}
+              ariaLabel="Submit form"
+            >
+              Submit
+            </Button>
+            <Recaptcha onChange={handleRecaptchaChange} />
           </form>
         </section>
       )}

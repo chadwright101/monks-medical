@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="hidden desktopSmall:block bg-gradient-to-r from-white to-transparent w-8 absolute left-0 top-0 h-full"></div>
         <div className="grid gap-10 desktopSmall:grid-cols-2 desktopSmall:place-items-stretch desktopSmall:gap-5">
           <div className="hidden desktopSmall:block">
-            <h4 className="text-paragraph font-medium mb-5">Navigation</h4>
+            <p className="font-medium mb-5">Navigation</p>
             <ul className="grid gap-1.5">
               {data.map(({ title, link }, index) => (
                 <li key={index}>
