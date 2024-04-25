@@ -47,8 +47,8 @@ const Slider = ({ cssClasses, desktop }: Props) => {
                 folder="images"
                 altIndex={index}
                 priority={index === 0 ? true : false}
-                phoneSize={650}
-                tabletSize={800}
+                phoneSize={10}
+                tabletSize={10}
                 desktopSmallSize={1100}
                 desktopSize={1680}
                 cssClasses="rounded-none"
@@ -104,10 +104,10 @@ const Slider = ({ cssClasses, desktop }: Props) => {
               folder="images"
               altIndex={index}
               priority={index === 0 ? true : false}
-              phoneSize={400}
+              phoneSize={550}
               tabletSize={600}
-              desktopSmallSize={1100}
-              desktopSize={1550}
+              desktopSmallSize={10}
+              desktopSize={10}
             />
           </SwiperSlide>
         ))}
