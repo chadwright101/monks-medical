@@ -4,9 +4,24 @@ import Header from "./_components/navigation/header";
 import Footer from "./_components/navigation/footer";
 
 export const metadata: Metadata = {
-  title: "Monk's Medical - Dr Kyle Rorke",
+  metadataBase: new URL("https://monksmedical.com"),
+  title: "Monk's Medical - Dr Kyle Rorke | Plettenberg Bay",
   description:
-    "Welcome to our medical practice, where we prioritize preventive care and personalized medicine to promote optimal health and well-being.",
+    "Welcome to Monk's Medical healthcare practice, where we prioritize preventive care and personalized medicine to promote optimal health and well-being. Based in Plettenberg Bay, South Africa",
+  keywords:
+    "Monk's Medical, Dr Kyle Rorke, Plettenberg Bay, Plett, Preventive Care, Personalized Medicine, Functional Medicine, Holistic Health, Metabolic Health, Sports Medicine, Primary Care, Chronic Disease Management, Men's Health, Women's Health, Paediatric Care, Nutritional Counselling, Mental Health Support, Point-of-Care Diagnostics, Point-of-Care Ultrasound, ImmunoBoost Infusion, Liver Cleanse Elixir, Antioxidant Therapy, Neurological Vitality, Personalized Healthcare, Wellness Services, Integrated Medicine",
+  openGraph: {
+    description:
+      "Welcome to Monk's Medical healthcare practice, where we prioritize preventive care and personalized medicine to promote optimal health and well-being. Based in Plettenberg Bay, South Africa",
+    type: "website",
+    locale: "en_ZA",
+    siteName: "Monk's Medical - Dr Kyle Rorke | Plettenberg Bay",
+    images: [
+      {
+        url: "https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-1375,q-75//monks-medical-25.jpg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
