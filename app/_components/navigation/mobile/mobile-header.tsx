@@ -38,6 +38,7 @@ const MobileHeader = () => {
         <button
           className="relative px-4 py-5 -m-3 z-20 desktopSmall:hidden ease-in-out duration-300"
           onClick={() => setShowMenuToggle(!showMenuToggle)}
+          aria-label="Open and close navigation menu"
         >
           <div className="grid gap-1.5 -mb-1">
             <div

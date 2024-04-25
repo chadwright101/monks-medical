@@ -112,35 +112,35 @@ const ContactComponent = () => {
             <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
               Address: <span className="text-left font-light ">{address}</span>
             </li>
-            <div className="flex gap-10 desktopSmall:gap-5">
-              <Link
-                href={facebook}
-                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-9 ease-in-out duration-300"
-                target="_blank"
-              >
-                <Image
-                  src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/facebook-icon.svg"
-                  alt="Facebook icon"
-                  width={40}
-                  height={40}
-                  className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
-                />
-              </Link>
-              <Link
-                href={instagram}
-                className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90 ease-in-out duration-300"
-                target="_blank"
-              >
-                <Image
-                  src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/instagram-icon.svg"
-                  alt="Instagram icon"
-                  width={40}
-                  height={40}
-                  className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
-                />
-              </Link>
-            </div>
           </ul>
+          <div className="flex gap-10 desktopSmall:gap-5 mt-10 desktopSmall:mt-5">
+            <Link
+              href={facebook}
+              className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-9 ease-in-out duration-300"
+              target="_blank"
+            >
+              <Image
+                src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/facebook-icon.svg"
+                alt="Facebook icon"
+                width={40}
+                height={40}
+                className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
+              />
+            </Link>
+            <Link
+              href={instagram}
+              className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90 ease-in-out duration-300"
+              target="_blank"
+            >
+              <Image
+                src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/instagram-icon.svg"
+                alt="Instagram icon"
+                width={40}
+                height={40}
+                className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
+              />
+            </Link>
+          </div>
           <ImageComponent
             file="monks-medical-stamp.png"
             folder="icons"
