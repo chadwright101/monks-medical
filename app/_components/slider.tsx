@@ -55,7 +55,10 @@ const Slider = ({ cssClasses, desktop }: Props) => {
               />
             </SwiperSlide>
           ))}
-          <button className="swiper-button-prev absolute top-1/2 z-10 left-10 cursor-pointer grid place-items-center p-2.5 rounded-full bg-white/[60%] hover:bg-white/75 ease-in-out duration-300">
+          <button
+            className="swiper-button-prev absolute top-1/2 z-10 left-10 cursor-pointer grid place-items-center p-2.5 rounded-full bg-white/[60%] hover:bg-white/75 ease-in-out duration-300"
+            aria-label="Show previous image"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="28"
@@ -66,7 +69,10 @@ const Slider = ({ cssClasses, desktop }: Props) => {
               <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
             </svg>
           </button>
-          <button className="swiper-button-next absolute top-1/2 z-10 right-10 cursor-pointer grid place-items-center p-2.5 rounded-full bg-white/[60%] hover:bg-white/75 ease-in-out duration-300">
+          <button
+            className="swiper-button-next absolute top-1/2 z-10 right-10 cursor-pointer grid place-items-center p-2.5 rounded-full bg-white/[60%] hover:bg-white/75 ease-in-out duration-300"
+            aria-label="Show next image"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="28"

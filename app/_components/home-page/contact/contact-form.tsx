@@ -65,46 +65,49 @@ const ContactForm = ({ cssClasses }: Props) => {
             className="flex flex-col gap-8"
           >
             <input type="hidden" name="_honey" className="hidden" />
-            <label htmlFor="name" className="flex flex-col gap-2">
+            <label htmlFor="fullName" className="flex flex-col gap-2">
               Name:
-              <input type="text" name="name" required placeholder="Full name" />
+              <input
+                type="text"
+                id="fullName"
+                name="name"
+                required
+                placeholder="Full name"
+                autoComplete="name"
+              />
             </label>
-            <label htmlFor="name" className="flex flex-col gap-2">
+            <label htmlFor="phoneNumber" className="flex flex-col gap-2">
               Phone:
-              <input type="number" name="tel" placeholder="Phone number" />
+              <input
+                type="number"
+                id="phoneNumber"
+                name="tel"
+                placeholder="Phone number"
+                autoComplete="tel"
+              />
             </label>
-            <label htmlFor="email" className="flex flex-col gap-2">
+            <label htmlFor="emailAddress" className="flex flex-col gap-2">
               Email:
               <input
                 type="email"
+                id="emailAddress"
                 name="email"
                 required
                 placeholder="Email address"
+                autoComplete="email"
               />
             </label>
-            <label htmlFor="message" className="flex flex-col gap-2">
+            <label htmlFor="userMessage" className="flex flex-col gap-2">
               Message:
               <textarea
+                id="userMessage"
                 required
                 rows={5}
                 name="message"
                 placeholder="Type your message here..."
               ></textarea>
             </label>
-            <Button
-              form
-              type="submit"
-              backgroundColor="black"
-              cssClasses={classNames("", {
-                "opacity-50 desktopSmall:cursor-not-allowed":
-                  !validateRecaptcha,
-              })}
-              disabled={!validateRecaptcha}
-              ariaLabel="Submit form"
-            >
-              Submit
-            </Button>
-            <Recaptcha onChange={handleRecaptchaChange} />
+            {/* ... */}
           </form>
         </section>
       )}
