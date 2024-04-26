@@ -30,12 +30,17 @@ const ContactForm = ({ cssClasses }: Props) => {
   }, [showEmailSubmitted]);
 
   const handleRecaptchaChange = (value: any) => {
-    const elapsedTime = new Date().getTime() - submissionStartTime;
-    if (elapsedTime < 3000) {
-      console.error("Form submitted too quickly. Possible bot activity.");
-      return;
+    if (value === null) {
+      setValidateRecaptcha(false);
+      console.log("Recaptcha expired");
     } else {
-      setValidateRecaptcha(!!value);
+      const elapsedTime = new Date().getTime() - submissionStartTime;
+      if (elapsedTime < 3000) {
+        console.error("Form submitted too quickly. Possible bot activity.");
+        return;
+      } else {
+        setValidateRecaptcha(!!value);
+      }
     }
   };
 

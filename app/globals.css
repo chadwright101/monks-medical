@@ -133,17 +133,17 @@
   .triangle-right {
     width: 0;
     height: 0;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-left: 22px solid #DDC3A0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 25px solid #DDC3A0;
   }
 
   .triangle-right-large {
     width: 0;
     height: 0;
-    border-top: 28px solid transparent;
-    border-bottom: 28px solid transparent;
-    border-left: 22px solid #DDC3A0;
+    border-top: 29px solid transparent;
+    border-bottom: 29px solid transparent;
+    border-left: 25px solid #DDC3A0;
   }
 
   .spinner {

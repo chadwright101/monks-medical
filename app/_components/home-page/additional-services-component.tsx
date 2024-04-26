@@ -23,7 +23,7 @@ const AdditionalServicesComponent = () => {
       <h3 className="text-white text-[40px] desktopSmall:col-span-3">
         Additional Services
       </h3>
-      <div className="grid gap-x-5 gap-y-8 grid-cols-2 place-items-center min-[800px]:flex justify-around desktopSmall:flex-col desktopSmall:items-start desktopSmall:justify-normal">
+      <div className="grid gap-x-5 gap-y-5 grid-cols-2 min-[800px]:flex justify-around desktopSmall:flex-col desktopSmall:items-start desktopSmall:justify-normal desktopSmall:gap-y-8">
         {additional.map(({ title }, index) => (
           <Button
             key={index}
@@ -39,7 +39,7 @@ const AdditionalServicesComponent = () => {
             {showTitle === title && (
               <span
                 className={classNames(
-                  "hidden desktopSmall:block absolute -right-[22px] top-0",
+                  "hidden desktopSmall:block absolute -right-[25px] top-0",
                   {
                     "triangle-right-large": index < 2,
                     "triangle-right": index >= 2,
