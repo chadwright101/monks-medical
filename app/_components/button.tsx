@@ -37,7 +37,7 @@ const Button = ({
       <Link
         href={link}
         className={classNames(
-          `px-7 py-5 text-center rounded-lg uppercase text-button ${cssClasses}`,
+          `px-7 py-5 text-center rounded-lg uppercase text-button hover:desktopSmall:opacity-90 ease-in-out duration-300 ${cssClasses}`,
           {
             "bg-brown text-white": backgroundColor === "brown",
             "bg-green text-white": backgroundColor === "green",
@@ -54,7 +54,7 @@ const Button = ({
     return (
       <button
         type={type || "button"}
-        className={`px-7 py-5 text-center rounded-lg uppercase text-button bg-black text-white ${cssClasses}`}
+        className={`px-7 py-5 text-center rounded-lg uppercase text-button bg-black text-white hover:desktopSmall:opacity-90 ${cssClasses}`}
         aria-label={ariaLabel}
         disabled={disabled}
         onClick={onClick}
