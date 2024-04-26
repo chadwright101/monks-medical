@@ -118,6 +118,7 @@ const ContactForm = ({ cssClasses }: Props) => {
               cssClasses={classNames("", {
                 "opacity-50 desktopSmall:cursor-not-allowed":
                   !validateRecaptcha,
+                "hover:desktopSmall:opacity-90": validateRecaptcha,
               })}
               disabled={!validateRecaptcha}
               ariaLabel="Submit form"

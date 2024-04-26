@@ -54,7 +54,7 @@ const Button = ({
     return (
       <button
         type={type || "button"}
-        className={`px-7 py-5 text-center rounded-lg uppercase text-button bg-black text-white hover:desktopSmall:opacity-90 ${cssClasses}`}
+        className={`px-7 py-5 text-center rounded-lg uppercase text-button bg-black text-white ${cssClasses}`}
         aria-label={ariaLabel}
         disabled={disabled}
         onClick={onClick}
