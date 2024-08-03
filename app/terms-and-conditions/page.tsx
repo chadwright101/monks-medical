@@ -122,9 +122,9 @@ const TermsAndConditions = () => {
         You are aware that information and data is automatically collected
         through the standard operation of the Internet servers and through the
         use of &quot;cookies.&quot; &quot;Cookies&quot; are small text files a
-        website can use to recognise repeat users, facilitate the user's ongoing
-        access to and use of the website and allow a website to track usage
-        behaviour and compile aggregate data that will allow content
+        website can use to recognise repeat users, facilitate the user&quot;s
+        ongoing access to and use of the website and allow a website to track
+        usage behaviour and compile aggregate data that will allow content
         improvements and targeted advertising. Cookies are not programs that
         come onto your system and damage files. Generally, cookies work by
         assigning a unique number to you that has no meaning outside the
