@@ -42,6 +42,12 @@ const Footer = () => {
               <span className="hidden mx-1 desktopSmall:block">|</span>
               {"© Monk's Medical 2024"}
             </p>
+            <Link
+              className=" text-link font-light"
+              href="/terms-and-conditions"
+            >
+              Terms and Conditions
+            </Link>
           </div>
           <div className="desktopSmall:grid gap-10 place-items-end">
             <Image
