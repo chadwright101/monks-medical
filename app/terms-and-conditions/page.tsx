@@ -5,10 +5,10 @@ const TermsAndConditions = () => {
       <h3 className="mb-5 mt-10">Acceptance of Terms</h3>
       <p>
         Monk’s Medical permits the use of this Website subject to these terms
-        and conditions ("the Terms and Conditions"). By using this Website in
-        any way, you shall be deemed to have accepted all the Terms and
-        Conditions unconditionally. You must not use this Website if you do not
-        agree to the Terms and Conditions. Your use of any product and/or
+        and conditions (&quot;the Terms and Conditions&quot;). By using this
+        Website in any way, you shall be deemed to have accepted all the Terms
+        and Conditions unconditionally. You must not use this Website if you do
+        not agree to the Terms and Conditions. Your use of any product and/or
         service offered by us will also be subject to applicable provisions of
         the Terms and Conditions.
       </p>
@@ -86,11 +86,11 @@ const TermsAndConditions = () => {
         all our patients and visitors of this Website, including respecting
         concerns about privacy. Monk’s Medical will explicitly ask when we need
         information that personally identifies you or allows us to contact you
-        ("personal information"). Generally, this information is requested when
-        requesting a particular service or product. You agree to provide
-        accurate and current information, and not to impersonate or misrepresent
-        any person or entity or falsely state or otherwise misrepresent your
-        affiliation with anyone or anything.
+        (&quot;personal information&quot;). Generally, this information is
+        requested when requesting a particular service or product. You agree to
+        provide accurate and current information, and not to impersonate or
+        misrepresent any person or entity or falsely state or otherwise
+        misrepresent your affiliation with anyone or anything.
       </p>
       <br />
       <p>
@@ -121,18 +121,18 @@ const TermsAndConditions = () => {
       <p>
         You are aware that information and data is automatically collected
         through the standard operation of the Internet servers and through the
-        use of "cookies." "Cookies" are small text files a website can use to
-        recognise repeat users, facilitate the user's ongoing access to and use
-        of the website and allow a website to track usage behaviour and compile
-        aggregate data that will allow content improvements and targeted
-        advertising. Cookies are not programs that come onto your system and
-        damage files. Generally, cookies work by assigning a unique number to
-        you that has no meaning outside the assigning site. If you do not want
-        information collected through the use of cookies, there is a simple
-        procedure in most browsers that allows you to deny or accept the cookie
-        feature; however, you should note that cookies may be necessary to
-        provide you with certain features (e.g., customized delivery of
-        information) available on our Websites.
+        use of &quot;cookies.&quot; &quot;Cookies&quot; are small text files a
+        website can use to recognise repeat users, facilitate the user's ongoing
+        access to and use of the website and allow a website to track usage
+        behaviour and compile aggregate data that will allow content
+        improvements and targeted advertising. Cookies are not programs that
+        come onto your system and damage files. Generally, cookies work by
+        assigning a unique number to you that has no meaning outside the
+        assigning site. If you do not want information collected through the use
+        of cookies, there is a simple procedure in most browsers that allows you
+        to deny or accept the cookie feature; however, you should note that
+        cookies may be necessary to provide you with certain features (e.g.,
+        customized delivery of information) available on our Websites.
       </p>
       <br />
       <p>
@@ -200,12 +200,12 @@ const TermsAndConditions = () => {
         prior written approval of an authorised representative of Monk’s
         Medical, which may be withheld or granted subject to such conditions
         Monk’s Medical may specify from time to time. Furthermore, this Website
-        or any part hereof may not be "framed" or "deep linked" in any way
-        whatsoever. This Website may from time to time contain message boards
-        which allow users to comment on their experience at Monk’s Medical. At
-        times those comments may contain references to matters not related to
-        Monk’s Medical. Those references do not necessarily represent the views
-        of Monk’s Medical.
+        or any part hereof may not be &quot;framed&quot; or &quot;deep
+        linked&quot; in any way whatsoever. This Website may from time to time
+        contain message boards which allow users to comment on their experience
+        at Monk’s Medical. At times those comments may contain references to
+        matters not related to Monk’s Medical. Those references do not
+        necessarily represent the views of Monk’s Medical.
       </p>
       <br />
 
