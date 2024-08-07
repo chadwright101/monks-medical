@@ -181,4 +181,30 @@
       transform: rotate(360deg);
     }
   }
+
+  .spinner-large {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    margin: -0.1rem auto;
+  }
+
+  .spinner-large::before,
+  .spinner-large::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 6px solid transparent;
+    border-top-color: #2D2C33;
+    animation: spin 1s linear infinite;
+  }
+
+  .spinner-large::after {
+    animation-delay: 0.5s;
+  }
+
 }

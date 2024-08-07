@@ -22,6 +22,14 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/terms-and-conditions"
+                  className="text-paragraph pb-1 -mb-[3px] hover:text-link ease-in-out duration-150 delay-75"
+                >
+                  Terms and Conditions
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="grid gap-10 place-items-center desktopSmall:place-items-end desktopSmall:order-3 desktopSmall:col-span-2 place-self-center">
@@ -32,6 +40,12 @@ const Footer = () => {
               height={124.49}
               className="desktopSmall:hidden w-[100px] h-auto"
             />
+            <Link
+              className=" text-link font-light tabletLarge:hidden"
+              href="/terms-and-conditions"
+            >
+              Terms and Conditions
+            </Link>
             <p className="flex flex-col gap-1 items-center desktopSmall:flex-row desktopSmall:gap-0">
               <Link
                 href="https://www.monksmedical.com"
@@ -42,12 +56,6 @@ const Footer = () => {
               <span className="hidden mx-1 desktopSmall:block">|</span>
               {"© Monk's Medical 2024"}
             </p>
-            <Link
-              className=" text-link font-light"
-              href="/terms-and-conditions"
-            >
-              Terms and Conditions
-            </Link>
           </div>
           <div className="desktopSmall:grid gap-10 place-items-end">
             <Image
