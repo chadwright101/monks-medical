@@ -37,7 +37,7 @@ export const BlogDataProvider: React.FC<{ children: React.ReactNode }> = ({
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://blog.monksmedical.com/wp-json/wp/v2/posts",
+          "https://blog.monksmedical.com/wp-json/wp/v2/posts",
           {
             next: { revalidate: 604800000 },
           }
