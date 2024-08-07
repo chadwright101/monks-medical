@@ -73,14 +73,14 @@ const BlogPage = ({ params }: { params: any }) => {
     }
     if (node.type === "tag" && node.name === "ol") {
       return (
-        <ol className="list-decimal text-left pl-10 text-paragraph">
+        <ol className="list-decimal text-left pl-8 text-paragraph">
           {domToReact(node.children)}
         </ol>
       );
     }
     if (node.type === "tag" && node.name === "ul") {
       return (
-        <ul className="list-disc text-left text-paragraph pl-10">
+        <ul className="list-disc text-left text-paragraph pl-8">
           {domToReact(node.children)}
         </ul>
       );
