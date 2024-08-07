@@ -21,15 +21,21 @@ const ContactComponent = () => {
 
   const [showPhone, setShowPhone] = useState("Show phone number");
   const [showEmail, setShowEmail] = useState("Show email address");
+  const [showPhoneLoading, setShowPhoneLoading] = useState(false);
+  const [showEmailLoading, setShowEmailLoading] = useState(false);
 
   const handleShowPhoneNumber = async () => {
+    setShowPhoneLoading(true);
     const phoneNumber = await showPhoneNumber();
     setShowPhone(phoneNumber);
+    setShowPhoneLoading(false);
   };
 
   const handleShowEmailAddress = async () => {
+    setShowEmailLoading(true);
     const emailAddress = await showEmailAddress();
     setShowEmail(emailAddress);
+    setShowEmailLoading(false);
   };
 
   return (
@@ -79,7 +85,11 @@ const ContactComponent = () => {
                   onClick={handleShowPhoneNumber}
                   aria-label="Show phone number"
                 >
-                  {showPhone}
+                  {showPhoneLoading ? (
+                    <div className="spinner-small"></div>
+                  ) : (
+                    showPhone
+                  )}
                 </button>
               ) : (
                 <Link
@@ -98,7 +108,11 @@ const ContactComponent = () => {
                   onClick={handleShowEmailAddress}
                   aria-label="Show email address"
                 >
-                  {showEmail}
+                  {showEmailLoading ? (
+                    <div className="spinner-small"></div>
+                  ) : (
+                    showEmail
+                  )}
                 </button>
               ) : (
                 <Link

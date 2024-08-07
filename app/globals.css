@@ -207,4 +207,29 @@
     animation-delay: 0.5s;
   }
 
+  .spinner-small {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: -0.1rem auto;
+  }
+
+  .spinner-small::before,
+  .spinner-small::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3.5px solid transparent;
+    border-top-color: #A77655;
+    animation: spin 1s linear infinite;
+  }
+
+  .spinner-small::after {
+    animation-delay: 0.5s;
+  }
+
 }
