@@ -25,14 +25,20 @@ const Blog = () => {
       for (const post of data) {
         if (post.author) {
           const authorResponse = await fetch(
-            `https://blog.monksmedical.com/wp-json/wp/v2/users/${post.author}`
+            `https://blog.monksmedical.com/wp-json/wp/v2/users/${post.author}`,
+            {
+              next: { revalidate: 604800000 },
+            }
           );
           const authorData = await authorResponse.json();
           authors[post.author] = authorData.name;
         }
         if (post.featured_media) {
           const response = await fetch(
-            `https://blog.monksmedical.com/wp-json/wp/v2/media/${post.featured_media}`
+            `https://blog.monksmedical.com/wp-json/wp/v2/media/${post.featured_media}`,
+            {
+              next: { revalidate: 604800000 },
+            }
           );
           const mediaData = await response.json();
           urls[post.id] = mediaData.source_url;

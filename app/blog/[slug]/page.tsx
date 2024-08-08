@@ -28,7 +28,10 @@ const BlogPage = ({ params }: { params: any }) => {
         if (filteredPost && filteredPost.author) {
           try {
             const response = await fetch(
-              `https://blog.monksmedical.com/wp-json/wp/v2/users/${filteredPost.author}`
+              `https://blog.monksmedical.com/wp-json/wp/v2/users/${filteredPost.author}`,
+              {
+                next: { revalidate: 604800000 },
+              }
             );
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -47,7 +50,10 @@ const BlogPage = ({ params }: { params: any }) => {
           if (post.featured_media) {
             try {
               const response = await fetch(
-                `https://blog.monksmedical.com/wp-json/wp/v2/media/${post.featured_media}`
+                `https://blog.monksmedical.com/wp-json/wp/v2/media/${post.featured_media}`,
+                {
+                  next: { revalidate: 604800000 },
+                }
               );
               if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
