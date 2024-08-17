@@ -43,7 +43,7 @@ const ContactComponent = () => {
       <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-[1fr_225px] tablet:gap-10 min-[800px]:grid-cols-1">
         <div className="grid gap-10 min-[800px]:grid-cols-2">
           <ImageComponent
-            file="monks-medical-1.jpg"
+            file="monks-medical-41.jpg"
             folder="images"
             phoneSize={400}
             tabletSize={600}
@@ -52,7 +52,7 @@ const ContactComponent = () => {
             cssClasses=" aspect-video"
           />
           <ImageComponent
-            file="monks-medical-25.jpg"
+            file="monks-medical-61.jpg"
             folder="images"
             phoneSize={400}
             tabletSize={600}
