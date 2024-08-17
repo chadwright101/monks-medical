@@ -1,26 +1,26 @@
 {
   "slider": [
-    "/monks-medical-23.jpg",
-    "/monks-medical-3.jpg",
-    "/monks-medical-25.jpg",
-    "/monks-medical-5.jpg",
-    "/monks-medical-8.jpg",
-    "/monks-medical-24.jpg",
-    "/monks-medical-14.jpg",
-    "/monks-medical-30.jpg",
-    "/monks-medical-21.jpg",
-    "/monks-medical-27.jpg",
-    "/monks-medical-26.jpg",
-    "/monks-medical-28.jpg",
-    "/monks-medical-29.jpg"
+    "monks-medical-23.jpg",
+    "monks-medical-3.jpg",
+    "monks-medical-25.jpg",
+    "monks-medical-5.jpg",
+    "monks-medical-8.jpg",
+    "monks-medical-24.jpg",
+    "monks-medical-14.jpg",
+    "monks-medical-30.jpg",
+    "monks-medical-21.jpg",
+    "monks-medical-27.jpg",
+    "monks-medical-26.jpg",
+    "monks-medical-28.jpg",
+    "monks-medical-29.jpg"
   ],
   "homePage": {
     "about": {
-      "kylesImage": "/monks-medical-11.jpg",
+      "kylesImage": "monks-medical-11.jpg",
       "images": [
-        "/monks-medical-2.jpg",
-        "/monks-medical-4.jpg",
-        "/monks-medical-27.jpg"
+        "monks-medical-2.jpg",
+        "monks-medical-4.jpg",
+        "monks-medical-27.jpg"
       ],
       "paragraphs": [
         "At Monks Medical, I strive to create a relaxed environment for patients with a clean and unique look. Here, we take a holistic approach to medicine. Understanding patients' ideas and concerns is crucial. This approach empowers patients with knowledge rather than simply treating the immediate issue.",
@@ -74,28 +74,28 @@
       "phone": "+27 44 020 0431",
       "email": "info@monksmedical.com",
       "address": "Unit 5, Monk’s View Building, 4 Church St, Plettenberg Bay, 6600",
-      "facebook": "https://www.facebook.com/monksmedical",
-      "instagram": "https://www.instagram.com/monksmedical"
+      "facebook": "https://www.facebook.commonksmedical",
+      "instagram": "https://www.instagram.commonksmedical"
     }
   },
   "dripsPage": [
     {
-      "image": "/monks-medical-6.jpg",
+      "image": "monks-medical-6.jpg",
       "title": "Strengthen Your Body's Defences",
       "paragraph": "Vitamin C: Enhances immune function Vitamin B Complex: Supports energy production and immune health Magnesium Sulphate (MGSO4): Essential for enzyme function and nerve transmission Zinc: Vital for immune system function G.A.C Formula (Glutamine, Arginine, Carnitine): Supports cellular health and immune function"
     },
     {
-      "image": "/monks-medical-12.jpg",
+      "image": "monks-medical-12.jpg",
       "title": "Detoxify and Rejuvenate Your Liver",
       "paragraph": "Vitamin C: Supports liver detoxification pathways Vitamin B Complex: Aids in liver function and energy metabolism Magnesium Sulphate (MGSO4): Helps with detoxification and relaxation Zinc: Supports liver health and regeneration G.A.C Formula (Glutamine, Arginine, Carnitine): Promotes liver cell repair and detoxification Glutathione: Powerful antioxidant crucial for liver health Selenium: Supports liver enzyme function"
     },
     {
-      "image": "/monks-medical-7.jpg",
+      "image": "monks-medical-7.jpg",
       "title": "Combat Oxidative Stress and Promote Cellular Health",
       "paragraph": "Vitamin C: Potent antioxidant protecting cells from damage Vitamin B Complex: Supports energy production and antioxidant pathways Magnesium Sulphate (MGSO4): Helps relax muscles and supports antioxidant enzymes Zinc: Essential for antioxidant enzyme function G.A.C Formula (Glutamine, Arginine, Carnitine): Enhances cellular function and antioxidant capacity Glutathione: Master antioxidant crucial for detoxification and cellular defence Selenium: Supports antioxidant enzyme activity Alpha-Lipoic Acid (ALA): Regenerates other antioxidants and supports cellular energy production N-Acetylcysteine (NAC): Precursor to glutathione, aiding in detoxification and antioxidant support NeuroRevive Therapy"
     },
     {
-      "image": "/monks-medical-10.jpg",
+      "image": "monks-medical-10.jpg",
       "title": "Restore Neurological Vitality and Cognitive Function",
       "paragraph": "NAD+ (Nicotinamide Adenine Dinucleotide): Supports cellular energy production and DNA repair Vitamin C: Protects neurons from oxidative stress and supports neurotransmitter synthesis Vitamin B Complex: Essential for nerve function and neurotransmitter production Personalisation is available based on blood tests and genetic analysis to tailor micronutrients for optimal neurorecovery. Each infusion is meticulously crafted to address specific health needs and can be personalized for individual requirements based on thorough assessments"
     }
