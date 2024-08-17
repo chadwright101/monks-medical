@@ -68,7 +68,7 @@ const AdditionalServicesComponent = () => {
         ))}
       </ul>
       <ImageComponent
-        file="/monks-medical-13.jpg"
+        file="/monks-medical-39.jpg"
         folder="images"
         phoneSize={400}
         tabletSize={600}
