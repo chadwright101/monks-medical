@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Monk's Medical - Dr Kyle Rorke | Plettenberg Bay",
     images: [
       {
-        url: "https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:w-1375,q-75//monks-medical-25.jpg",
+        url: "https://ik.imagekit.io/thewrightdesigns/tr:w-1375,q-75/monks-medical-10.jpg",
       },
     ],
   },

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import ImageComponent from "../image-component";
+import Image from "next/image";
 
 interface Item {
   title: string;
@@ -35,19 +35,17 @@ const DripItems = ({ data, cssClasses }: Props) => {
                 <p className="text-justify">{paragraph}</p>
               </div>
             </div>
-            <ImageComponent
-              file={image}
-              folder="images"
-              phoneSize={400}
-              tabletSize={750}
-              desktopSmallSize={550}
-              desktopSize={400}
-              cssClasses={classNames(
+            <Image
+              src={image}
+              alt="Dr Kylee Rorke - Drips"
+              className={classNames(
                 "aspect-video min-[800px]:aspect-none min-[800px]:h-full",
                 {
                   "scale-x-[-1]": index === 1,
                 }
               )}
+              width={800}
+              height={450}
             />
           </section>
           {index !== data.length - 1 && (

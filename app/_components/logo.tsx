@@ -11,7 +11,7 @@ const Logo = ({ large }: Props) => {
   return (
     <Link href="/" className="flex items-end gap-1">
       <Image
-        src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-150/monks-medical-logo.svg"
+        src="/assets/icons/monks-medical-logo.svg"
         alt="Monk's Medical Logo"
         priority
         width={60.69}

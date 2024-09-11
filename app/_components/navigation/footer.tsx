@@ -6,7 +6,7 @@ import data from "@/app/_data/nav-data.json";
 const Footer = () => {
   return (
     <footer className="border-t-2 border-khaki mt-20">
-      <div className="py-10 bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:q-55,w-450/monks-medical-53.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:q-55,w-650/monks-medical-53.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:q-55,w-1150/monks-medical-53.jpg')] bg-cover bg-center max-w-[1100px] mx-auto relative px-8">
+      <div className="py-10 bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-450/monks-medical-53.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-650/monks-medical-53.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-1150/monks-medical-53.jpg')] bg-cover bg-center max-w-[1100px] mx-auto relative px-8">
         <div className="hidden desktopSmall:block bg-gradient-to-r from-white to-transparent w-8 absolute left-0 top-0 h-full"></div>
         <div className="grid gap-10 desktopSmall:grid-cols-2 desktopSmall:place-items-stretch desktopSmall:gap-5">
           <div className="hidden desktopSmall:block">
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="grid gap-10 place-items-center desktopSmall:place-items-end desktopSmall:order-3 desktopSmall:col-span-2 place-self-center">
             <Image
-              src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-200/monks-medical-logo-2.svg"
+              src="/assets/icons/monks-medical-logo-2.svg"
               alt="Monk's Medical logo"
               width={100}
               height={124.49}
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
           <div className="desktopSmall:grid gap-10 place-items-end">
             <Image
-              src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-150/monks-medical-logo-2.svg"
+              src="/assets/icons/monks-medical-logo-2.svg"
               alt="Monk's Medical logo"
               width={67}
               height={83}

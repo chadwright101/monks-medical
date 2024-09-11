@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 import classNames from "classnames";
 
 import Button from "../button";
 
 import data from "@/app/_data/general-data.json";
-import ImageComponent from "../image-component";
 
 const AdditionalServicesComponent = () => {
   const {
@@ -67,16 +67,15 @@ const AdditionalServicesComponent = () => {
           </li>
         ))}
       </ul>
-      <ImageComponent
-        file="/monks-medical-39.jpg"
-        folder="images"
-        phoneSize={400}
-        tabletSize={600}
-        desktopSmallSize={440}
-        desktopSize={440}
-        pictureCssClasses="hidden desktopSmall:block"
-        cssClasses="h-[275px] scale-x-[-1]"
-      />
+      <div className="hidden desktopSmall:block">
+        <Image
+          src="/assets/images/monks-medical-39.jpg"
+          alt="Monk's Medical by Dr Kyle Rorke - Additional Services"
+          width={600}
+          height={600}
+          className="h-[275px] scale-x-[-1]"
+        />
+      </div>
     </div>
   );
 };

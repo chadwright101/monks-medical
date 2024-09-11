@@ -23,7 +23,7 @@ const ServicesComponent = () => {
             >
               <div className="h-[140px]">
                 <Image
-                  src={`https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/tr:w-250,q-80${image}`}
+                  src={image}
                   alt={`${title} - Monks Medical by Dr Kyle Rorke | Plettenberg Bay`}
                   width={118}
                   height={118}

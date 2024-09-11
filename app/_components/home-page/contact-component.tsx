@@ -4,7 +4,6 @@ import { useState, lazy, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import ImageComponent from "../image-component";
 import { showEmailAddress, showPhoneNumber } from "@/app/_actions/actions";
 import ContactForm from "./contact/contact-form";
 
@@ -42,35 +41,30 @@ const ContactComponent = () => {
     <section className="pt-20">
       <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-[1fr_225px] tablet:gap-10 min-[800px]:grid-cols-1">
         <div className="grid gap-10 min-[800px]:grid-cols-2">
-          <ImageComponent
-            file="monks-medical-41.jpg"
-            folder="images"
-            phoneSize={400}
-            tabletSize={600}
-            desktopSmallSize={500}
-            desktopSize={550}
-            cssClasses=" aspect-video"
+          <Image
+            src="/assets/images/monks-medical-41.jpg"
+            alt="Monks Medical"
+            width={600}
+            height={400}
+            className=" aspect-video"
           />
-          <ImageComponent
-            file="monks-medical-61.jpg"
-            folder="images"
-            phoneSize={400}
-            tabletSize={600}
-            desktopSmallSize={500}
-            desktopSize={550}
-            cssClasses=" aspect-video"
+          <Image
+            src="/assets/images/monks-medical-61.jpg"
+            alt="Monks Medical"
+            width={600}
+            height={400}
+            className="aspect-video"
           />
         </div>
-        <ImageComponent
-          file="monks-medical-stamp.png"
-          folder="icons"
-          phoneSize={300}
-          tabletSize={300}
-          desktopSmallSize={300}
-          desktopSize={200}
-          pictureCssClasses="max-w-[300px] mx-auto min-[800px]:hidden"
-          cssClasses="tablet:object-contain"
-        />
+        <div className="max-w-[300px] mx-auto min-[800px]:hidden">
+          <Image
+            src="/assets/icons/monks-medical-stamp.png"
+            alt="Monks Medical"
+            width={300}
+            height={300}
+            className="tablet:object-contain"
+          />
+        </div>
       </div>
       <div id="contact" className=" desktopSmall:-translate-y-20"></div>
       <div className="grid gap-20 pt-20">
@@ -134,7 +128,7 @@ const ContactComponent = () => {
               target="_blank"
             >
               <Image
-                src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/facebook-icon.svg"
+                src="/assets/icons/facebook-icon.svg"
                 alt="Facebook icon"
                 width={40}
                 height={40}
@@ -147,7 +141,7 @@ const ContactComponent = () => {
               target="_blank"
             >
               <Image
-                src="https://ik.imagekit.io/thewrightdesigns/monks-medical/icons/instagram-icon.svg"
+                src="/assets/icons/instagram-icon.svg"
                 alt="Instagram icon"
                 width={40}
                 height={40}
@@ -155,16 +149,15 @@ const ContactComponent = () => {
               />
             </Link>
           </div>
-          <ImageComponent
-            file="monks-medical-stamp.png"
-            folder="icons"
-            phoneSize={400}
-            tabletSize={600}
-            desktopSmallSize={500}
-            desktopSize={200}
-            cssClasses="tablet:object-contain"
-            pictureCssClasses="hidden min-[800px]:block absolute top-0 right-0 h-full desktopSmall:h-[250px] desktopSmall:w-auto desktopSmall:-top-14"
-          />
+          <div className="hidden min-[800px]:block absolute top-0 right-0 h-full desktopSmall:h-[250px] desktopSmall:w-auto desktopSmall:-top-14">
+            <Image
+              src="/assets/icons/monks-medical-stamp.png"
+              alt="Monks Medical"
+              width={600}
+              height={600}
+              className="tablet:object-contain"
+            />
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-20 pt-20 min-[800px]:grid grid-cols-2 min-[800px]:gap-10 desktopSmall:gap-20">

@@ -29,7 +29,7 @@ const MobileHeader = () => {
           "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-white bg-cover bg-center",
           {
             "border-white": showMenuToggle,
-            "bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:q-55,w-450/monks-medical-54.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:q-55,w-650/monks-medical-54.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/monks-medical/images/tr:q-55,w-1150/monks-medical-54.jpg')]":
+            "bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-450/monks-medical-54.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-650/monks-medical-54.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-1150/monks-medical-54.jpg')]":
               !showMenuToggle,
           }
         )}
