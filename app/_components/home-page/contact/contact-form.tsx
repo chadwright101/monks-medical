@@ -84,7 +84,7 @@ const ContactForm = ({ cssClasses }: Props) => {
             <label htmlFor="phoneNumber" className="flex flex-col gap-2">
               Phone:
               <input
-                type="number"
+                type="tel"
                 id="phoneNumber"
                 name="tel"
                 placeholder="Phone number"
