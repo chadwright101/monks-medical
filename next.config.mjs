@@ -6,9 +6,15 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ik.imagekit.io/thewrightdesigns/monks-medical",
+        hostname: "ik.imagekit.io",
         port: "",
-        pathname: "/*/**",
+        pathname: "/thewrightdesigns/monks-medical/*/**",
+      },
+      {
+        protocol: "https",
+        hostname: "blog.monksmedical.com",
+        port: "",
+        pathname: "/wp-content/uploads/**",
       },
     ],
   },
