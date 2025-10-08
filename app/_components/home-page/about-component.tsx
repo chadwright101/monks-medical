@@ -45,17 +45,18 @@ const AboutComponent = () => {
       </div>
       <div className="grid gap-10 tablet:grid-cols-2 min-[800px]:grid-cols-3">
         {images.map((image, index) => (
-          <Image
-            key={index}
-            src={image}
-            alt={`Dr Kyle Rorke - ${index}`}
-            className={classNames("aspect-video", {
-              "tablet:col-span-2 tablet:aspect-[16/7] min-[800px]:col-auto min-[800px]:aspect-video":
-                index === 2,
-            })}
-            width={800}
-            height={600}
-          />
+          <div key={index}>
+            <Image
+              src={image}
+              alt={`Dr Kyle Rorke - ${index}`}
+              className={classNames("aspect-video", {
+                "w-full h-auto tablet:col-span-2 tablet:aspect-[16/7] min-[800px]:col-auto min-[800px]:aspect-video":
+                  index === 2,
+              })}
+              width={800}
+              height={600}
+            />
+          </div>
         ))}
       </div>
     </main>

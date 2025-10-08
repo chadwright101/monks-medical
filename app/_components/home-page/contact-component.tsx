@@ -46,14 +46,14 @@ const ContactComponent = () => {
             alt="Monks Medical"
             width={600}
             height={400}
-            className=" aspect-video"
+            className="w-full h-auto aspect-video"
           />
           <Image
             src="/assets/images/monks-medical-61.jpg"
             alt="Monks Medical"
             width={600}
             height={400}
-            className="aspect-video"
+            className="w-full h-auto aspect-video"
           />
         </div>
         <div className="max-w-[300px] mx-auto min-[800px]:hidden">
