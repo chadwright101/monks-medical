@@ -16,7 +16,7 @@ const DripItems = ({ data, cssClasses }: Props) => {
   return (
     <main className={cssClasses}>
       {data.map(({ title, image, paragraph }, index) => (
-        <>
+        <div key={index}>
           <section
             key={index}
             className={classNames("grid gap-10 min-[800px]:grid-cols-2", {
@@ -51,7 +51,7 @@ const DripItems = ({ data, cssClasses }: Props) => {
           {index !== data.length - 1 && (
             <hr className={`text-black/25 my-15`} />
           )}
-        </>
+        </div>
       ))}
     </main>
   );

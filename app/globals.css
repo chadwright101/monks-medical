@@ -1,6 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-white: #ffffff;
+  --color-black: #2D2C33;
+  --color-brown: #A77655;
+  --color-lightBrown: #DDC3A0;
+  --color-khaki: #A5996D;
+  --color-green: #A6B2A9;
+  --color-link: #0000EE;
+
+  --font-family-*: initial;
+  --font-family-larsseit: "Larsseit";
+
+  --text-*: initial;
+  --text-heading: 3rem;
+  --text-heading--line-height: 110%;
+  --text-heading--letter-spacing: 0.18rem;
+  --text-heading--font-weight: 700;
+  --text-subheading: 1.5rem;
+  --text-subheading--line-height: 120%;
+  --text-subheading--letter-spacing: 0.06rem;
+  --text-subheading--font-weight: 500;
+  --text-paragraph: 1rem;
+  --text-paragraph--line-height: 125%;
+  --text-paragraph--letter-spacing: 0.02rem;
+  --text-paragraph--font-weight: 300;
+  --text-button: 1rem;
+  --text-button--line-height: 125%;
+  --text-button--letter-spacing: 0.02rem;
+  --text-button--font-weight: 500;
+  --text-logoLarge: 1rem;
+  --text-logoLarge--line-height: 80%;
+  --text-logoLarge--letter-spacing: 0.055rem;
+  --text-logoLarge--font-weight: 500;
+  --text-logoSmall: 0.744rem;
+  --text-logoSmall--line-height: 90%;
+  --text-logoSmall--letter-spacing: 0.04092rem;
+  --text-logoSmall--font-weight: 500;
+
+  --breakpoint-*: initial;
+  --breakpoint-phone: 400px;
+  --breakpoint-tablet: 600px;
+  --breakpoint-tabletLarge: 950px;
+  --breakpoint-desktopSmall: 1100px;
+  --breakpoint-desktop: 1500px;
+
+  --drop-shadow-default: 0 4px 4px rgba(45, 44, 51, 0.25);
+
+  --spacing-15: 3.75rem;
+}
 
 @layer base {
   @font-face {
@@ -37,7 +87,8 @@
 
 @layer components {
   * {
-    @apply font-larsseit text-black underline-offset-[6px];
+    @apply text-black underline-offset-[6px];
+    font-family: var(--font-family-larsseit);
   }
 
   html {
